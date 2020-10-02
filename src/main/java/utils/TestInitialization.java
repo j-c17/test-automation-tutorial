@@ -22,7 +22,8 @@ public class TestInitialization {
                 String userDir = System.getProperty("user.dir");
 
                 TestConfiguration.readRunProperties(Paths.get(userDir, "run.properties"));
-                TestConfiguration.readConfig(Paths.get(userDir, "env_config", TestConfiguration.getEnv() + ".properties"));
+                String env = TestConfiguration.getEnv();
+                TestConfiguration.readConfig(Paths.get(userDir, "env_config", env + ".properties"));
 
                 isInit = true;
 
