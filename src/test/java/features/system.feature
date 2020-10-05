@@ -1,9 +1,6 @@
 Feature: Basic System test
   Description: This test used to test API endpoint using cucumber notation
 
-  Scenario: Test is initialized
-    Given Test is initialized
-
   Scenario: Im able to get host
     Then Host is printed
 

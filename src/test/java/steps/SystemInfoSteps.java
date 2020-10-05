@@ -1,19 +1,12 @@
 package steps;
 
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import utils.TestConfiguration;
-import utils.TestInitialization;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class SystemInfoSteps {
-
-    @Given("Test is initialized")
-    public void testIsInitialized() {
-        TestInitialization.init();
-    }
 
     @Then("System date is printed")
     public void systemDateIsPrinted() {
