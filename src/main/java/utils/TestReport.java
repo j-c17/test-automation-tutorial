@@ -29,7 +29,7 @@ public class TestReport {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd-HH-mm-ss");
         String fileName = "raport-" + LocalDateTime.now().format(formatter) + ".html";
 
-        ExtentSparkReporter spark = new ExtentSparkReporter(Paths.get( fileName).toFile())
+        ExtentSparkReporter spark = new ExtentSparkReporter(Paths.get("reports", fileName).toFile())
 
                 .viewConfigurer()
                 .viewOrder()
