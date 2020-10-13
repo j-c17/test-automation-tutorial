@@ -1,0 +1,267 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "examples": [
+    {
+      "id": 1,
+      "name": "LeanneGraham",
+      "username": "Bret",
+      "email": "Sincere@april.biz",
+      "address": {
+        "street": "KulasLight",
+        "suite": "Apt.556",
+        "city": "Gwenborough",
+        "zipcode": "92998-3874",
+        "geo": {
+          "lat": "-37.3159",
+          "lng": "81.1496"
+        }
+      },
+      "phone": "1-770-736-8031x56442",
+      "website": "hildegard.org",
+      "company": {
+        "name": "Romaguera-Crona",
+        "catchPhrase": "Multi-layeredclient-serverneural-net",
+        "bs": "harnessreal-timee-markets"
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "name",
+    "username",
+    "email",
+    "address",
+    "phone",
+    "website",
+    "company"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "integer",
+      "title": "The id schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "name": {
+      "$id": "#/properties/name",
+      "type": "string",
+      "title": "The name schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "LeanneGraham"
+      ]
+    },
+    "username": {
+      "$id": "#/properties/username",
+      "type": "string",
+      "title": "The username schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Bret"
+      ]
+    },
+    "email": {
+      "$id": "#/properties/email",
+      "type": "string",
+      "title": "The email schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "Sincere@april.biz"
+      ]
+    },
+    "address": {
+      "$id": "#/properties/address",
+      "type": "object",
+      "title": "The address schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "street": "KulasLight",
+          "suite": "Apt.556",
+          "city": "Gwenborough",
+          "zipcode": "92998-3874",
+          "geo": {
+            "lat": "-37.3159",
+            "lng": "81.1496"
+          }
+        }
+      ],
+      "required": [
+        "street",
+        "suite",
+        "city",
+        "zipcode",
+        "geo"
+      ],
+      "properties": {
+        "street": {
+          "$id": "#/properties/address/properties/street",
+          "type": "string",
+          "title": "The street schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "KulasLight"
+          ]
+        },
+        "suite": {
+          "$id": "#/properties/address/properties/suite",
+          "type": "string",
+          "title": "The suite schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Apt.556"
+          ]
+        },
+        "city": {
+          "$id": "#/properties/address/properties/city",
+          "type": "string",
+          "title": "The city schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Gwenborough"
+          ]
+        },
+        "zipcode": {
+          "$id": "#/properties/address/properties/zipcode",
+          "type": "string",
+          "title": "The zipcode schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "92998-3874"
+          ]
+        },
+        "geo": {
+          "$id": "#/properties/address/properties/geo",
+          "type": "object",
+          "title": "The geo schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": {},
+          "examples": [
+            {
+              "lat": "-37.3159",
+              "lng": "81.1496"
+            }
+          ],
+          "required": [
+            "lat",
+            "lng"
+          ],
+          "properties": {
+            "lat": {
+              "$id": "#/properties/address/properties/geo/properties/lat",
+              "type": "string",
+              "title": "The lat schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": "",
+              "examples": [
+                "-37.3159"
+              ]
+            },
+            "lng": {
+              "$id": "#/properties/address/properties/geo/properties/lng",
+              "type": "string",
+              "title": "The lng schema",
+              "description": "An explanation about the purpose of this instance.",
+              "default": "",
+              "examples": [
+                "81.1496"
+              ]
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "phone": {
+      "$id": "#/properties/phone",
+      "type": "string",
+      "title": "The phone schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "1-770-736-8031x56442"
+      ]
+    },
+    "website": {
+      "$id": "#/properties/website",
+      "type": "string",
+      "title": "The website schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "hildegard.org"
+      ]
+    },
+    "company": {
+      "$id": "#/properties/company",
+      "type": "object",
+      "title": "The company schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "name": "Romaguera-Crona",
+          "catchPhrase": "Multi-layeredclient-serverneural-net",
+          "bs": "harnessreal-timee-markets"
+        }
+      ],
+      "required": [
+        "name",
+        "catchPhrase",
+        "bs"
+      ],
+      "properties": {
+        "name": {
+          "$id": "#/properties/company/properties/name",
+          "type": "string",
+          "title": "The name schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Romaguera-Crona"
+          ]
+        },
+        "catchPhrase": {
+          "$id": "#/properties/company/properties/catchPhrase",
+          "type": "string",
+          "title": "The catchPhrase schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "Multi-layeredclient-serverneural-net"
+          ]
+        },
+        "bs": {
+          "$id": "#/properties/company/properties/bs",
+          "type": "string",
+          "title": "The bs schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "harnessreal-timee-markets"
+          ]
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true
+}
