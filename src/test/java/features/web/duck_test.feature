@@ -1,5 +1,5 @@
 @web
-Feature: Basic Requests API Test
+Feature: Basic Selenium Test
   Description: This test used to test API endpoint using cucumber notation
 
   #scnario will be executed before each scenario
