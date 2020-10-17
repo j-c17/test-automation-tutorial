@@ -3,7 +3,7 @@ import io.cucumber.testng.CucumberOptions;
 
 
 @CucumberOptions(
-        plugin = "listener.ListenerPlugin",
+        plugin = {"junit:target/cucumber.xml", "pretty", "listener.ListenerPlugin"},
         features = "src/test/java/features",
         glue = {"steps"}
 )
